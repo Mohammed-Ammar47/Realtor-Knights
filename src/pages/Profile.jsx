@@ -100,7 +100,7 @@ export default function Profile() {
               id="email"
               value={formData.email}
             />
-            <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg mb-6">
+            <div className="flex justify-between whitespace-nowrap text-sm lg:text-lg mb-6">
               <p className="flex items-red-600">
                 Do you want to change your info?
                 <span
