@@ -43,7 +43,7 @@ export default function Header() {
           <ul className={`md-flex md:space-x-10 md:flex md:items-center absolute  md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in-out ${open ? 'top-10 ':'top-[-300px]'}`} >
             <li
               className={`cursor-pointer font-semibold text-sm py-3 text-gray-300 border-b-[3px] border-b-transparent ${
-                PathName("/") && " text-gray-950  border-b-blue-700"
+                PathName("/") && " text-gray-950  border-b-blue-600"
               } `}
               onClick={() => {
                 navigate("/");
@@ -53,7 +53,7 @@ export default function Header() {
             </li>
             <li
               className={`cursor-pointer font-semibold text-sm py-3 text-gray-300 border-b-[3px] border-b-transparent ${
-                PathName("/offers") && " text-gray-950  border-b-blue-700"
+                PathName("/offers") && " text-gray-950  border-b-blue-600"
               } `}
               onClick={() => {
                 navigate("/offers");
@@ -64,7 +64,7 @@ export default function Header() {
             <li
               className={`cursor-pointer font-semibold text-sm py-3 text-gray-300 border-b-[3px] border-b-transparent ${
                 (PathName("/sign-in") || PathName("/profile")) &&
-                " text-gray-950  border-b-blue-700"
+                " text-gray-950  border-b-blue-600"
               } `}
               onClick={() => {
                 navigate("/profile");

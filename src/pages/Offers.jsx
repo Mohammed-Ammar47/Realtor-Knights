@@ -69,7 +69,7 @@ if (loading) {
       {listings.map((listing)=> (
        <ListingItem key={listing.id} id={listing.id} listing={listing.data} />
       ))}</ul>
-      { lastFetchedListing && <div className="flex justify-center items-center"><button onClick={fetchMoreListings}  className="bg-white px-3 py-2 text-gray-700 border border-gray-300 mb-6 mt-6 hover:border-slate-600 rounded transition duration-150 ease-in-out">show more</button></div> }
+      { lastFetchedListing  && <div className="flex justify-center items-center"><button onClick={fetchMoreListings}  className="bg-white px-3 py-2 text-gray-700 border border-gray-300 mb-6 mt-6 hover:border-slate-600 rounded transition duration-150 ease-in-out">show more</button></div> }
        </div> : <p>There are no offers</p>}
     </div>
   </>;

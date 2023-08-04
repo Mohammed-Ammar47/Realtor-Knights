@@ -31,10 +31,11 @@ export default function Slider() {
   }
 
   return (
-    <Swiper
+    <Swiper 
     slidesPerView={1}
     navigation
-    pagination={{ type: "progressbar" }}
+    bulletActiveClass= {'swiper-pagination-bullet-active'}
+    pagination={{ type: "bullets"  }}
     effect="fade"
     modules={[EffectFade, Autoplay, Navigation, Pagination]}
     autoplay={{ delay: 3000 }}

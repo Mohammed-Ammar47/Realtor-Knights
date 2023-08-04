@@ -24,7 +24,6 @@ export default function Listing() {
   const [contactLandlord, setContactLandlord] = useState(false);
   const params = useParams();
   const auth = getAuth();
-  const position = [34, 1];
 
   useEffect(() => {
     async function fetchListing() {
@@ -45,7 +44,8 @@ export default function Listing() {
       <Swiper
         slidesPerView={1}
         navigation
-        pagination={{ type: "progressbar" }}
+        bulletActiveClass= {'swiper-pagination-bullet-active'}
+    pagination={{ type: "bullets"  }}
         effect="fade"
         modules={[EffectFade, Autoplay, Navigation, Pagination]}
         autoplay={{ delay: 3000 }}

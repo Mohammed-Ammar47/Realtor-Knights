@@ -10,7 +10,7 @@ body {
   color: #a8dadc;
 }
 
-.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
   background: #a8dadc !important;
 }
 
